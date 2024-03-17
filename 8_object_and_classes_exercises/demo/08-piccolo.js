@@ -50,7 +50,7 @@ function setSolve(input) {
         .forEach(car => console.log(car));
 }
 
-solve(['IN, CA2844AA',
+setSolve(['IN, CA2844AA',
     'IN, CA1234TA',
     'OUT, CA2844AA',
     'IN, CA9999TT',
