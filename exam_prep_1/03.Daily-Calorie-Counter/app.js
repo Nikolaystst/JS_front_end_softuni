@@ -68,7 +68,7 @@ async function fetchdata(event) {
         })
 
         deleteMealButton.addEventListener("click", async () => {
-            currentMealId= el._id
+            currentMealId = el._id
 
             await fetch(`${URL}/${currentMealId}`, {
                 method: 'DELETE'
@@ -97,8 +97,7 @@ async function populateData(event) {
 
     if (!response.ok) {
         return;
-    }
-    ;
+    };
 
     getFoodInputValue.value = '';
     getTimeInputValue.value = '';
@@ -110,10 +109,6 @@ async function edit(event) {
     let getFoodInputValue = document.querySelector('input[id=food]')
     let getTimeInputValue = document.querySelector('input[id=time]');
     let getCaloriesInputValue = document.querySelector('input[id=calories]');
-    // console.log(getFoodInputValue.value);
-    // console.log(getTimeInputValue.value);
-    // console.log(getCaloriesInputValue.value);
-    // console.log(currentMealId)
 
     let response = await fetch(`${URL}/${currentMealId}`, {
         method: 'PUT',
@@ -128,8 +123,7 @@ async function edit(event) {
     await fetchdata();
     editMealButtonElement.setAttribute('disabled', 'disabled');
     addMealButtonElement.removeAttribute('disabled');
-    getFoodInputValue.value= '';
-    getTimeInputValue.value= '';
-    getCaloriesInputValue.value= '';
-
-}
+    getFoodInputValue.value = '';
+    getTimeInputValue.value = '';
+    getCaloriesInputValue.value = '';
+};
