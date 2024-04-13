@@ -168,7 +168,7 @@
     }
 
     async function parseRequest(req) {
-        const url = new URL(req.url, `http://${req.headers.host}`);
+        const url = new url(req.url, `http://${req.headers.host}`);
         const tokens = url.pathname.split('/').filter(x => x.length > 0);
         const serviceName = tokens.shift();
         const queryString = url.search.split('?')[1] || '';

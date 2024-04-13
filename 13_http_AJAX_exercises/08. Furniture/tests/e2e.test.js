@@ -436,7 +436,7 @@ async function handleRaw(match, handlers) {
   }
 
   function urlPredicate(current) {
-    if (current instanceof URL) {
+    if (current instanceof url) {
       return current.href.toLowerCase().includes(match.toLowerCase());
     } else {
       return current.url().toLowerCase().includes(match.toLowerCase());

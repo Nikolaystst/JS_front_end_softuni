@@ -23,17 +23,13 @@ function solve() {
 
         let pNameInputElement = document.createElement('p');
         pNameInputElement.textContent = `name:${nameInputElement.value}`;
-        // console.log(pNameInputElement.textContent)
 
         let pNumInputElement = document.createElement('p');
         pNumInputElement.textContent = `phone:${phoneNumInputElement.value}`;
-        // console.log(pNumInputElement.textContent)
 
         let category2InputElement = document.createElement('p');
         let category22InputElement = document.getElementById("category").selectedIndex;
-        // console.log(categoryInputElement.options[category22InputElement].value)
         category2InputElement.textContent = `category:${categoryInputElement.options[category22InputElement].value}`
-        // console.log(category2InputElement.textContent)
 
         let name = nameInputElement.value;
         let phoneNum = phoneNumInputElement.value;

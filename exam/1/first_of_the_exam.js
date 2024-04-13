@@ -93,11 +93,11 @@ function NSS(array) {
 //     "Reload - Jesse",
 //     "Ride Off Into Sunset"])
 
-NSS(["2",
-   "Gus 100 4",
-   "Walt 100 5",
-   "FireShot - Gus - Bandit",
-   "TakeHit - Walt - 100 - Bandit",
-   "Reload - Gus",
-   "Ride Off Into Sunset"])
+// NSS(["2",
+//    "Gus 100 4",
+//    "Walt 100 5",
+//    "FireShot - Gus - Bandit",
+//    "TakeHit - Walt - 100 - Bandit",
+//    "Reload - Gus",
+//    "Ride Off Into Sunset"])
 
